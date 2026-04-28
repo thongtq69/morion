@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <rect width="400" height="400" fill="#f8fbff"/>
+  <rect x="80" y="100" width="240" height="200" rx="12" fill="#ffffff" stroke="#cfdcec" stroke-width="2"/>
+  <rect x="120" y="140" width="160" height="120" rx="6" fill="#eef5fc" stroke="#cfdcec"/>
+  <rect x="140" y="160" width="120" height="80" rx="4" fill="#ffffff"/>
+  <circle cx="200" cy="200" r="22" fill="#dcebfa"/>
+  <circle cx="200" cy="200" r="10" fill="#5fb1f5"/>
+  <path d="M120 200 L100 200 M280 200 L300 200 M200 140 L200 120 M200 260 L200 280" stroke="#bcd3ea" stroke-width="3" stroke-linecap="round"/>
+  <rect x="135" y="60" width="130" height="22" rx="4" fill="#eef5fc"/>
+  <text x="200" y="76" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#1565d8">CASSETTE</text>
+</svg>

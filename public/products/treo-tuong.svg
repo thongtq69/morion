@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <rect width="400" height="400" fill="#f8fbff"/>
+  <rect x="60" y="140" width="280" height="90" rx="14" fill="#ffffff" stroke="#cfdcec" stroke-width="2"/>
+  <rect x="60" y="200" width="280" height="30" rx="6" fill="#eef5fc"/>
+  <rect x="80" y="158" width="240" height="6" rx="3" fill="#dfe9f3"/>
+  <rect x="80" y="172" width="180" height="4" rx="2" fill="#e5edf6"/>
+  <circle cx="305" cy="172" r="4" fill="#5fb1f5"/>
+  <path d="M120 250 L110 290 M170 250 L165 295 M220 250 L220 295 M270 250 L275 295" stroke="#bcd3ea" stroke-width="3" stroke-linecap="round"/>
+  <rect x="135" y="100" width="130" height="22" rx="4" fill="#eef5fc"/>
+  <text x="200" y="116" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#1565d8">INVERTER</text>
+</svg>
