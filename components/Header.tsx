@@ -1,179 +1,134 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
-import {
-  Search,
-  ShoppingBag,
-  ChevronDown,
-  Menu,
-  X,
-  Headphones,
-  Award,
-  Tag,
-  Phone,
-} from "lucide-react";
+import { useState, useEffect } from "react";
+import { Search, X } from "lucide-react";
 import { Logo } from "./Logo";
-import { mainNav, site } from "@/lib/site";
+import { mainNav, servicesNav } from "@/lib/site";
 
 export function Header() {
-  const [mobileOpen, setMobileOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
+
+  useEffect(() => {
+    if (menuOpen || searchOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => { document.body.style.overflow = ""; };
+  }, [menuOpen, searchOpen]);
 
   return (
-    <header className="sticky top-0 z-40 w-full">
-      <div className="bg-white">
-        <div className="mx-auto flex h-[100px] max-w-[1200px] items-center gap-6 px-3">
-          <Logo />
-
-          <div className="hidden flex-1 items-center justify-center gap-8 lg:flex">
-            <USP
-              icon={<Headphones className="h-7 w-7 text-brand" />}
-              title="Hotline"
-              value={site.hotlineRaw}
-            />
-            <USP
-              icon={<Award className="h-7 w-7 text-brand" />}
-              title="Dịch Vụ"
-              value="Chuyên Nghiệp"
-            />
-            <USP
-              icon={<Tag className="h-7 w-7 text-brand" />}
-              title="Giá Cả"
-              value="Cạnh Tranh"
-            />
-          </div>
-
-          <div className="hidden lg:block">
-            <form className="flex h-10 w-72 overflow-hidden rounded border border-slate-200 bg-white">
-              <input
-                type="search"
-                placeholder="Nhập tên sản phẩm..."
-                className="min-w-0 flex-1 bg-transparent px-3 text-sm outline-none placeholder:text-slate-400"
-              />
-              <button
-                type="submit"
-                className="flex w-12 items-center justify-center bg-brand text-white transition hover:bg-brand-dark"
-                aria-label="Tìm kiếm"
-              >
-                <Search className="h-4 w-4" />
-              </button>
-            </form>
-          </div>
-
+    <>
+      <header className="pointer-events-none fixed inset-x-0 top-0 z-40 flex justify-center px-3 pt-4">
+        <div className="pointer-events-auto flex w-full max-w-[420px] items-center justify-between gap-3 rounded-full bg-white/85 px-3 py-2 shadow-[0_8px_32px_rgba(13,28,92,0.12)] backdrop-blur-xl ring-1 ring-black/5">
+          <Logo width={120} height={32} />
+          <Link
+            href="/lien-he"
+            className="inline-flex h-9 items-center justify-center rounded-full bg-brand px-5 text-[13px] font-bold text-white transition hover:bg-brand-dark"
+          >
+            Liên hệ
+          </Link>
           <button
             type="button"
-            onClick={() => setMobileOpen((v) => !v)}
-            className="ml-auto inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 lg:hidden"
-            aria-label="Mở menu"
+            aria-label="Tìm kiếm"
+            onClick={() => setSearchOpen(true)}
+            className="flex h-9 w-9 items-center justify-center rounded-full bg-white text-slate-700 ring-1 ring-slate-200 transition hover:bg-brand-light hover:text-brand"
           >
-            {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+            <Search className="h-4 w-4" />
+          </button>
+          <button
+            type="button"
+            aria-label="Mở menu"
+            onClick={() => setMenuOpen(true)}
+            className="flex h-9 w-9 items-center justify-center rounded-full bg-white text-slate-700 ring-1 ring-slate-200 transition hover:bg-brand-light hover:text-brand"
+          >
+            <GridIcon />
           </button>
         </div>
-      </div>
+      </header>
 
-      <nav className="hidden h-[44px] bg-gradient-to-r from-brand-dark via-brand to-brand-sky text-white shadow-sm lg:block">
-        <div className="mx-auto flex h-full max-w-[1200px] items-center px-3">
-          <ul className="flex flex-1 items-center justify-center">
-            {mainNav.map((item) => (
-              <li key={item.href} className="group relative">
-                <Link
-                  href={item.href}
-                  className="flex h-[44px] items-center gap-1 px-5 text-[13px] font-bold uppercase tracking-wide transition hover:bg-white/10"
-                >
-                  {item.label === "Tin tức" ? "Thông tin" : item.label}
-                  {item.children && <ChevronDown className="h-3.5 w-3.5" />}
-                </Link>
-                {item.children && (
-                  <ul className="invisible absolute left-0 top-full z-10 min-w-[260px] translate-y-1 rounded-b-md bg-white py-2 text-slate-800 opacity-0 shadow-xl transition-all group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
-                    {item.children.map((child) => (
-                      <li key={child.href}>
-                        <Link
-                          href={child.href}
-                          className="block px-5 py-2.5 text-sm font-medium hover:bg-brand-light hover:text-brand-dark"
-                        >
-                          {child.label}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </li>
-            ))}
-          </ul>
-          <Link
-            href="/gio-hang"
-            className="ml-3 inline-flex items-center gap-2 rounded-full border border-white/80 bg-transparent px-5 py-1.5 text-sm font-semibold text-white transition hover:bg-white hover:text-brand"
-          >
-            Cart
-            <ShoppingBag className="h-4 w-4" />
-          </Link>
-        </div>
-      </nav>
-
-      {mobileOpen && (
-        <div className="border-b border-slate-100 bg-white lg:hidden">
-          <ul className="divide-y divide-slate-100">
-            {mainNav.map((item) => (
-              <li key={item.href}>
-                <Link
-                  href={item.href}
-                  className="flex items-center justify-between px-5 py-3 text-sm font-semibold text-slate-800"
-                  onClick={() => setMobileOpen(false)}
-                >
-                  {item.label === "Tin tức" ? "Thông tin" : item.label}
-                  {item.children && <ChevronDown className="h-4 w-4 text-slate-400" />}
-                </Link>
-                {item.children && (
-                  <ul className="bg-slate-50">
-                    {item.children.map((child) => (
-                      <li key={child.href}>
-                        <Link
-                          href={child.href}
-                          className="block px-8 py-2.5 text-sm text-slate-600"
-                          onClick={() => setMobileOpen(false)}
-                        >
-                          — {child.label}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </li>
-            ))}
-            <li className="px-5 py-4">
-              <a
-                href={`tel:${site.hotlineRaw}`}
-                className="flex items-center justify-center gap-2 rounded-full bg-accent px-5 py-3 text-sm font-bold text-white"
-              >
-                <Phone className="h-4 w-4" />
-                Gọi {site.hotline}
-              </a>
-            </li>
-          </ul>
+      {menuOpen && (
+        <div className="fixed inset-0 z-50 flex flex-col bg-[#050a18]/95 backdrop-blur-xl">
+          <div className="flex items-center justify-between px-6 py-5">
+            <Logo light width={130} height={36} />
+            <button
+              onClick={() => setMenuOpen(false)}
+              aria-label="Đóng menu"
+              className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20"
+            >
+              <X className="h-5 w-5" />
+            </button>
+          </div>
+          <nav className="mx-auto grid w-full max-w-5xl flex-1 grid-cols-1 gap-10 overflow-y-auto px-6 py-6 md:grid-cols-2">
+            <ul className="space-y-2">
+              <li className="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-white/50">Trang chính</li>
+              {mainNav.map((m) => (
+                <li key={m.href}>
+                  <Link
+                    href={m.href}
+                    onClick={() => setMenuOpen(false)}
+                    className="block py-2 text-2xl font-bold tracking-tight text-white transition hover:text-hero-cyan md:text-3xl"
+                  >
+                    {m.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <ul className="space-y-2">
+              <li className="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-white/50">Dịch vụ</li>
+              {servicesNav.map((m) => (
+                <li key={m.href}>
+                  <Link
+                    href={m.href}
+                    onClick={() => setMenuOpen(false)}
+                    className="block py-1.5 text-base font-medium text-white/85 transition hover:text-hero-cyan"
+                  >
+                    {m.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
         </div>
       )}
-    </header>
+
+      {searchOpen && (
+        <div className="fixed inset-0 z-50 flex items-start justify-center bg-black/60 px-3 pt-20 backdrop-blur-md">
+          <div className="w-full max-w-2xl rounded-2xl bg-white p-4 shadow-2xl">
+            <div className="flex items-center gap-3 rounded-xl border border-slate-200 px-3">
+              <Search className="h-5 w-5 text-slate-500" />
+              <input
+                type="search"
+                autoFocus
+                placeholder="Bạn cần tìm gì hôm nay?"
+                className="h-12 flex-1 bg-transparent text-base outline-none placeholder:text-slate-400"
+              />
+              <button
+                onClick={() => setSearchOpen(false)}
+                className="rounded-full bg-slate-100 p-1.5 text-slate-600 hover:bg-slate-200"
+                aria-label="Đóng"
+              >
+                <X className="h-4 w-4" />
+              </button>
+            </div>
+            <p className="mt-3 px-3 text-xs text-slate-400">
+              Gõ từ khóa rồi nhấn Enter để tìm bài viết, dịch vụ hoặc dự án
+            </p>
+          </div>
+        </div>
+      )}
+    </>
   );
 }
 
-function USP({
-  icon,
-  title,
-  value,
-}: {
-  icon: React.ReactNode;
-  title: string;
-  value: string;
-}) {
+function GridIcon() {
   return (
-    <div className="flex items-center gap-2.5">
-      <span className="flex h-11 w-11 items-center justify-center text-brand">
-        {icon}
-      </span>
-      <span className="leading-tight">
-        <span className="block text-[15px] font-bold text-brand">{title}</span>
-        <span className="block text-[13px] font-medium text-slate-700">{value}</span>
-      </span>
-    </div>
+    <svg viewBox="0 0 16 16" fill="currentColor" className="h-4 w-4" aria-hidden>
+      {[0, 1, 2].flatMap((r) => [0, 1, 2].map((c) => (
+        <circle key={`${r}-${c}`} cx={2 + c * 6} cy={2 + r * 6} r="1.4" />
+      )))}
+    </svg>
   );
 }

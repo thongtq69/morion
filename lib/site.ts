@@ -1,85 +1,18 @@
 import data from "./data/site-data.json";
 
-export type NavItem = {
-  label: string;
-  href: string;
-  children?: NavItem[];
-};
+export type NavItem = { label: string; href: string };
 
-export type ProductCategory = {
+export type ContentPage = {
   slug: string;
   title: string;
-  desc: string;
-  image: string;
-  count: number;
-};
-
-export type Product = {
-  id: string;
-  slug: string;
-  name: string;
-  brand: string;
-  category: string;
-  capacity: string;
-  price: number | "contact";
-  oldPrice?: number;
-  image: string;
-  badge?: string;
-  features: string[];
-  description_html?: string;
-  excerpt?: string;
-  date?: string;
-  link?: string;
-};
-
-export type ProductCategorySlug = string;
-
-export type Project = {
-  slug: string;
-  title: string;
-  summary: string;
-  image: string;
-  year: string;
+  metaTitle?: string;
+  metaDescription?: string;
+  image?: string;
+  ogImage?: string;
   url?: string;
+  contentText?: string;
+  contentHtml: string;
 };
-
-export type HeroSlide = {
-  id: number;
-  title: string;
-  subtitle: string;
-  description: string;
-  cta: string;
-  ctaHref?: string;
-  image: string;
-};
-
-export type Service = {
-  slug: string;
-  title: string;
-  desc: string;
-  icon: string;
-  image: string;
-  content_html: string;
-  date?: string;
-};
-
-export type NewsItem = {
-  slug: string;
-  title: string;
-  excerpt: string;
-  image: string;
-  date: string;
-  category: string;
-  content_html: string;
-};
-
-export type BrandLogo = {
-  name: string;
-  image: string;
-  alt?: string;
-};
-
-export type FeaturedLink = { title: string; url: string };
 
 export type SiteInfo = {
   name: string;
@@ -87,25 +20,43 @@ export type SiteInfo = {
   tagline: string;
   description: string;
   company: string;
+  parent: string;
   hotline: string;
   hotlineRaw: string;
-  zalo: string;
+  phones: string[];
+  phonesDisplay: string[];
   email: string;
-  facebook: string;
   address: string;
-  workingHours: string;
-  license: string;
+  social: Record<string, string>;
+  relatedSites: Record<string, string>;
+  copyright: string;
+  url: string;
+  title: string;
   domain: string;
 };
 
-export const site = data.site as SiteInfo;
-export const mainNav = data.mainNav as NavItem[];
-export const productCategories = data.productCategories as ProductCategory[];
-export const products = data.products as Product[];
-export const brands = data.brands as string[];
-export const brandLogos = data.brandLogos as BrandLogo[];
-export const projects = data.projects as Project[];
-export const heroSlides = data.heroSlides as HeroSlide[];
-export const heroFeaturedLinks = data.heroFeaturedLinks as FeaturedLink[];
-export const services = data.services as Service[];
-export const news = data.news as NewsItem[];
+type DataShape = {
+  site: SiteInfo;
+  mainNav: NavItem[];
+  servicesNav: NavItem[];
+  services: ContentPage[];
+  industries: ContentPage[];
+  caseStudies: ContentPage[];
+  wiki: ContentPage[];
+  about: { title: string; metaDescription?: string; image?: string; contentText?: string; contentHtml: string };
+  contact: { title: string; metaDescription?: string; contentText?: string; contentHtml: string };
+  home: any;
+};
+
+const d = data as unknown as DataShape;
+
+export const site = d.site;
+export const mainNav = d.mainNav;
+export const servicesNav = d.servicesNav;
+export const services = d.services;
+export const industries = d.industries;
+export const caseStudies = d.caseStudies;
+export const wiki = d.wiki;
+export const aboutPage = d.about;
+export const contactPage = d.contact;
+export const home = d.home;
