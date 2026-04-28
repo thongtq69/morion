@@ -8,7 +8,7 @@ export function WikiHome() {
   if (!w.items?.length) return null;
   return (
     <section className="bg-white py-20">
-      <div className="mx-auto max-w-[1200px] px-6">
+      <div className="mx-auto max-w-[1345px] px-10">
         <div className="mb-10 flex items-end justify-between gap-4">
           <h2 className="text-3xl font-extrabold tracking-tight text-brand-dark md:text-4xl">
             <span className="text-brand">+ </span>

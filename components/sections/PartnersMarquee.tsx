@@ -11,8 +11,8 @@ export function PartnersMarquee() {
   const items = [...PARTNER_LOGOS, ...PARTNER_LOGOS, ...PARTNER_LOGOS];
   return (
     <section className="bg-slate-50 py-12">
-      <div className="mx-auto max-w-[1200px] px-6 text-center">
-        <h3 className="text-2xl font-extrabold text-brand-dark md:text-3xl">
+      <div className="mx-auto max-w-[1345px] px-10 text-center">
+        <h3 className="text-3xl font-extrabold text-[#0d1321] md:text-4xl">
           <span className="text-brand">250+</span> Đối tác đồng hành
         </h3>
       </div>

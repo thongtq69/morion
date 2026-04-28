@@ -153,3 +153,47 @@ body {
   background-clip: text;
   color: transparent;
 }
+
+/* HomeNest button styles — replicate exact layered shadow + ring */
+.hn-btn-primary {
+  background: linear-gradient(135deg, #4d6ed1 0%, #1652f0 100%);
+  box-shadow:
+    rgba(123, 139, 209, 0.33) 0 0.74px 0.74px -0.75px,
+    rgba(123, 139, 209, 0.32) 0 2.02px 2.02px -1.5px,
+    rgba(123, 139, 209, 0.3) 0 4.43px 4.43px -2.25px,
+    rgba(123, 139, 209, 0.25) 0 9.83px 9.83px -3px,
+    rgba(123, 139, 209, 0.11) 0 25px 25px -3.75px,
+    rgb(77, 110, 209) 0 0 0 1px;
+  transition: transform 0.2s ease;
+}
+.hn-btn-primary:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.08);
+}
+
+.hn-btn-secondary {
+  box-shadow:
+    rgba(255, 255, 255, 0.4) 0 2px 4px 0 inset,
+    rgba(255, 255, 255, 0.33) 0 0.74px 0.74px -0.75px,
+    rgba(255, 255, 255, 0.32) 0 2.02px 2.02px -1.5px,
+    rgba(255, 255, 255, 0.3) 0 4.43px 4.43px -2.25px,
+    rgba(255, 255, 255, 0.25) 0 9.83px 9.83px -3px,
+    rgba(255, 255, 255, 0.11) 0 25px 25px -3.75px;
+  transition: transform 0.2s ease;
+}
+.hn-btn-secondary:hover {
+  transform: translateY(-1px);
+}
+
+/* Header pill */
+.hn-header-pill {
+  background: rgb(255, 255, 255);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: rgba(0, 0, 0, 0.08) 0 4px 20px 0, rgba(0, 0, 0, 0.05) 0 0 1px 0;
+  border-radius: 50px;
+}
+
+@keyframes float {
+  0%, 100% { transform: translate(-50%, 0); }
+  50% { transform: translate(-50%, -10px); }
+}

@@ -7,17 +7,17 @@ export function CaseStudiesHome() {
   const c = home.caseStudiesSection;
   const items = c.items.slice(0, 6);
   return (
-    <section className="bg-slate-50 py-20">
-      <div className="mx-auto max-w-[1200px] px-6">
-        <div className="mb-10 flex flex-col items-end justify-between gap-4 lg:flex-row">
+    <section className="bg-slate-50 py-24">
+      <div className="mx-auto max-w-[1345px] px-10">
+        <div className="mb-12 flex flex-col items-end justify-between gap-4 lg:flex-row">
           <div className="max-w-3xl">
-            <span className="inline-flex items-center gap-2 text-sm text-brand">
-              <span className="text-lg leading-none">+</span>
+            <span className="inline-flex items-center gap-1 text-sm font-medium text-[#05080c]">
+              <span className="text-base leading-none text-brand">+</span>
               {c.label}
             </span>
-            <h2 className="mt-3 text-3xl font-extrabold leading-tight tracking-tight text-brand-dark md:text-4xl lg:text-5xl">
+            <h2 className="mt-3 text-[60px] font-extrabold leading-[1.1] tracking-[-0.02em] text-[#0d1321]">
               {c.headline[0]}{" "}
-              <span className="font-script text-brand">{c.headline[1]}</span>
+              <span className="font-script font-medium text-brand">{c.headline[1]}</span>
             </h2>
           </div>
           <Link

@@ -13,12 +13,12 @@ export function WhyChooseUs() {
             "radial-gradient(circle at 20% 20%, rgba(11,188,214,0.25), transparent 50%), radial-gradient(circle at 80% 80%, rgba(22,82,240,0.3), transparent 50%)",
         }}
       />
-      <div className="relative mx-auto max-w-[1200px] px-6">
-        <div className="mx-auto mb-12 max-w-3xl text-center">
-          <span className="text-sm text-hero-cyan">+ {w.label}</span>
-          <h2 className="mt-3 text-3xl font-extrabold leading-tight tracking-tight md:text-4xl lg:text-5xl">
+      <div className="relative mx-auto max-w-[1345px] px-10">
+        <div className="mx-auto mb-12 max-w-4xl text-center">
+          <span className="text-sm font-medium text-hero-cyan">+ {w.label}</span>
+          <h2 className="mt-3 text-[60px] font-extrabold leading-[1.1] tracking-[-0.02em]">
             {w.headline[0]}{" "}
-            <span className="font-script text-hero-cyan">{w.headline[1]}</span>{" "}
+            <span className="font-script font-medium text-hero-cyan">{w.headline[1]}</span>{" "}
             {w.headline[2]}
           </h2>
           <p className="mt-3 text-base text-white/70">{w.subhead}</p>

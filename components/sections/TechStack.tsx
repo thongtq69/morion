@@ -10,12 +10,12 @@ export function TechStack() {
   const items = (t.items as any[]).filter((it) => tab === "Tất cả" || it.tab === tab);
   return (
     <section className="bg-white py-20">
-      <div className="mx-auto max-w-[1200px] px-6">
-        <div className="mx-auto mb-10 max-w-3xl text-center">
-          <span className="text-sm text-brand">+ {t.label}</span>
-          <h2 className="mt-3 text-3xl font-extrabold leading-tight tracking-tight text-brand-dark md:text-4xl lg:text-5xl">
+      <div className="mx-auto max-w-[1345px] px-10">
+        <div className="mx-auto mb-10 max-w-4xl text-center">
+          <span className="text-sm font-medium text-brand">+ {t.label}</span>
+          <h2 className="mt-3 text-[60px] font-extrabold leading-[1.1] tracking-[-0.02em] text-[#0d1321]">
             {t.headline[0]}{" "}
-            <span className="font-script text-brand">{t.headline[1]}</span>{" "}
+            <span className="font-script font-medium text-brand">{t.headline[1]}</span>{" "}
             {t.headline[2]}
           </h2>
         </div>

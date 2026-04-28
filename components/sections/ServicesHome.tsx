@@ -10,17 +10,17 @@ export function ServicesHome() {
   const [tab, setTab] = useState(0);
   const activeTab = s.tabs[tab];
   return (
-    <section className="bg-slate-50 py-20">
-      <div className="mx-auto max-w-[1200px] px-6">
+    <section className="bg-[rgba(250,250,250,0.9)] py-24">
+      <div className="mx-auto max-w-[1345px] px-10">
         <div className="mb-12 flex flex-col items-end justify-between gap-4 lg:flex-row lg:items-end">
-          <div className="max-w-2xl">
-            <span className="inline-flex items-center gap-2 text-sm text-brand">
-              <span className="text-lg leading-none">+</span>
+          <div className="max-w-3xl">
+            <span className="inline-flex items-center gap-1 text-sm font-medium text-[#05080c]">
+              <span className="text-base leading-none text-brand">+</span>
               {s.label}
             </span>
-            <h2 className="mt-3 text-4xl font-extrabold leading-tight tracking-tight text-brand-dark md:text-5xl">
+            <h2 className="mt-3 text-[60px] font-extrabold leading-[1.1] tracking-[-0.02em] text-[#0d1321]">
               {s.headline[0]}{" "}
-              <span className="font-script text-brand">{s.headline[1]}</span>{" "}
+              <span className="font-script font-medium text-brand">{s.headline[1]}</span>{" "}
               {s.headline[2]}
             </h2>
           </div>
@@ -34,16 +34,16 @@ export function ServicesHome() {
         </div>
 
         <div className="grid gap-10 lg:grid-cols-[260px_1fr]">
-          <ul className="space-y-2">
+          <ul className="space-y-1">
             {s.tabs.map((t: any, i: number) => (
               <li key={t.title}>
                 <button
                   type="button"
                   onClick={() => setTab(i)}
-                  className={`block w-full rounded-xl px-4 py-3 text-left text-sm font-bold transition ${
+                  className={`block w-full rounded-lg px-4 py-2.5 text-left text-[18px] font-medium transition ${
                     tab === i
-                      ? "bg-brand text-white shadow-md shadow-brand/30"
-                      : "text-slate-700 hover:bg-white"
+                      ? "bg-[#e9f0fd] text-[#1a3b91]"
+                      : "text-[#0d1321]/70 hover:bg-white"
                   }`}
                 >
                   {t.title}

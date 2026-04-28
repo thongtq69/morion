@@ -6,8 +6,8 @@ export function CtaBanner() {
   const c = home.ctaBanner;
   return (
     <section className="bg-white pb-12">
-      <div className="mx-auto max-w-[1200px] px-6">
-        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-brand via-brand-sky to-hero-cyan p-8 text-white md:p-14">
+      <div className="mx-auto max-w-[1345px] px-10">
+        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-brand via-brand-sky to-hero-cyan p-10 text-white md:p-16">
           <div
             aria-hidden
             className="pointer-events-none absolute -right-20 -top-20 h-64 w-64 rounded-full bg-white/15"

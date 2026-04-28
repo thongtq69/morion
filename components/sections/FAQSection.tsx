@@ -9,12 +9,12 @@ export function FAQSection() {
   const [open, setOpen] = useState<number | null>(0);
   return (
     <section className="bg-slate-50 py-20">
-      <div className="mx-auto max-w-[1200px] px-6">
+      <div className="mx-auto max-w-[1345px] px-10">
         <div className="grid gap-12 lg:grid-cols-[1fr_1.4fr] lg:items-start">
           <div>
-            <span className="text-sm text-brand">+ {f.label}</span>
-            <h2 className="mt-3 text-3xl font-extrabold leading-tight tracking-tight text-brand-dark md:text-4xl lg:text-5xl">
-              <span className="font-script text-brand">Giải Đáp</span>{" "}
+            <span className="text-sm font-medium text-brand">+ {f.label}</span>
+            <h2 className="mt-3 text-[60px] font-extrabold leading-[1.1] tracking-[-0.02em] text-[#0d1321]">
+              <span className="font-script font-medium text-brand">Giải Đáp</span>{" "}
               Mọi Thắc Mắc
             </h2>
           </div>

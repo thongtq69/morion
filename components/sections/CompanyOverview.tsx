@@ -6,16 +6,16 @@ import { home } from "@/lib/site";
 export function CompanyOverview() {
   const c = home.companyOverview;
   return (
-    <section className="bg-gradient-to-b from-white to-slate-50 py-20">
-      <div className="mx-auto max-w-[1200px] px-6">
-        <div className="mx-auto mb-12 max-w-3xl text-center">
-          <span className="inline-flex items-center gap-2 text-sm text-brand">
-            <span className="text-lg leading-none">+</span>
+    <section className="bg-gradient-to-b from-white to-slate-50 py-24">
+      <div className="mx-auto max-w-[1345px] px-10">
+        <div className="mx-auto mb-14 max-w-4xl text-center">
+          <span className="inline-flex items-center gap-1 text-sm font-medium text-[#05080c]">
+            <span className="text-base leading-none text-brand">+</span>
             {c.label}
           </span>
-          <h2 className="mt-3 text-4xl font-extrabold leading-tight tracking-tight text-brand-dark md:text-5xl lg:text-6xl">
+          <h2 className="mt-3 text-[60px] font-extrabold leading-[1.1] tracking-[-0.02em] text-[#0d1321]">
             {c.headline[0]}{" "}
-            <span className="font-script text-brand">{c.headline[1]}</span>{" "}
+            <span className="font-script font-medium text-brand">{c.headline[1]}</span>{" "}
             {c.headline[2]}
           </h2>
         </div>

@@ -1,96 +1,92 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Phone } from "lucide-react";
 import { home } from "@/lib/site";
+
+const HERO_VIDEO = "https://image.homenest.com.vn/wp-content/uploads/2026/04/Video-banner-HomeNest-Viet-Nam.mp4";
+const PLATFORM_IMG = "https://image.homenest.com.vn/wp-content/uploads/2026/04/Khoi-banner-trang-chu-HomeNest-Viet-Nam.png";
+const PILLAR_IMG = "https://image.homenest.com.vn/wp-content/uploads/2026/04/Cot-banner-trang-chu-HomeNest-Viet-Nam.png";
+
+// 5 pillar positions matching homenest hero layout (relative to viewport-width container)
+const PILLARS = [
+  { left: "47%", platformTop: 446, pillarTop: 511 },
+  { left: "55.5%", platformTop: 286, pillarTop: 352 },
+  { left: "65.5%", platformTop: 533, pillarTop: 598 },
+  { left: "76%", platformTop: 286, pillarTop: 352 },
+  { left: "85.5%", platformTop: 446, pillarTop: 511 },
+];
 
 export function Hero() {
   const h = home.hero;
   return (
-    <section className="relative isolate overflow-hidden bg-[#050a18] pb-20 pt-28 text-white md:pb-28 md:pt-32">
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0"
-        style={{
-          backgroundImage:
-            "radial-gradient(circle at 70% 50%, rgba(11,188,214,0.45) 0%, rgba(5,10,24,0) 55%), radial-gradient(circle at 20% 80%, rgba(22,82,240,0.35) 0%, rgba(5,10,24,0) 50%)",
-        }}
-      />
-      <Stars />
-      <div className="relative mx-auto grid max-w-[1200px] gap-10 px-6 lg:grid-cols-[1.1fr_1fr] lg:items-center">
-        <div className="animate-fade-up">
-          <h1 className="text-5xl font-black leading-[1.05] tracking-tight md:text-6xl lg:text-7xl">
+    <section className="relative isolate h-screen min-h-[680px] w-full overflow-hidden bg-black text-white">
+      {/* background video */}
+      <div className="absolute inset-0">
+        <video
+          src={HERO_VIDEO}
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="auto"
+          className="h-full w-full object-cover"
+        />
+      </div>
+
+      {/* bottom gradient fade */}
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-b from-transparent to-black/80" />
+
+      {/* 3D pillar stacks (right side) */}
+      <div className="pointer-events-none absolute inset-0">
+        {PILLARS.map((p, i) => (
+          <div key={i}>
+            <Image
+              src={PILLAR_IMG}
+              alt=""
+              width={115}
+              height={330}
+              className="absolute"
+              style={{ left: p.left, top: p.pillarTop, transform: "translateX(-50%)", animation: `float 4s ease-in-out ${i * 0.3}s infinite` }}
+              priority={i < 2}
+            />
+            <Image
+              src={PLATFORM_IMG}
+              alt=""
+              width={150}
+              height={136}
+              className="absolute"
+              style={{ left: p.left, top: p.platformTop, transform: "translateX(-50%)", animation: `float 4s ease-in-out ${i * 0.3}s infinite` }}
+              priority={i < 2}
+            />
+          </div>
+        ))}
+      </div>
+
+      {/* Hero text content overlay */}
+      <div className="relative z-10 mx-auto flex h-full max-w-[1280px] items-center px-12">
+        <div className="max-w-[600px] animate-fade-up">
+          <h1 className="text-[64px] font-extrabold leading-[1] tracking-[-0.02em] text-white">
             {h.title}
           </h1>
-          <p className="mt-6 max-w-xl text-base text-white/80 md:text-lg">{h.description}</p>
-          <div className="mt-8 flex flex-wrap items-center gap-3">
+          <p className="mt-6 text-[18px] leading-[1.5] text-white/95">{h.description}</p>
+          <div className="mt-10 flex flex-wrap items-center gap-3">
             <Link
               href={h.ctaPrimary.href}
-              className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-brand to-brand-sky px-7 py-3.5 text-sm font-bold text-white shadow-lg shadow-brand/30 transition hover:shadow-xl hover:shadow-brand/50"
+              className="hn-btn-primary inline-flex items-center gap-2 rounded-full px-[26px] py-[11px] text-[15px] font-semibold text-white"
             >
-              {h.ctaPrimary.label}
-              <span className="flex h-7 w-7 items-center justify-center rounded-full bg-white/20 transition group-hover:bg-white/30">
-                <ArrowRight className="h-3.5 w-3.5" />
-              </span>
+              <Phone className="h-4 w-4" />
+              <span>{h.ctaPrimary.label}</span>
             </Link>
             <Link
               href={h.ctaSecondary.href}
-              className="group inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/5 px-7 py-3.5 text-sm font-bold text-white backdrop-blur-sm transition hover:bg-white/15"
+              className="hn-btn-secondary inline-flex items-center gap-2 rounded-full bg-white px-[26px] py-[11px] text-[15px] font-semibold text-[#1a3b91]"
             >
-              {h.ctaSecondary.label}
-              <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
+              <span>{h.ctaSecondary.label}</span>
+              <ArrowRight className="h-4 w-4" />
             </Link>
-          </div>
-        </div>
-        <div className="relative h-[420px] md:h-[560px]">
-          <div className="absolute right-0 top-1/2 h-[440px] w-[260px] -translate-y-1/2 animate-float md:h-[560px] md:w-[320px]">
-            <Image
-              src={h.imageColumn}
-              alt="Cột banner trang chủ"
-              fill
-              priority
-              sizes="320px"
-              className="object-contain"
-            />
-          </div>
-          <div className="absolute left-0 top-1/2 h-[300px] w-[330px] -translate-y-1/2 animate-float md:h-[420px] md:w-[460px]" style={{ animationDelay: "1.2s" }}>
-            <Image
-              src={h.imageMain}
-              alt="Khối banner trang chủ"
-              fill
-              priority
-              sizes="460px"
-              className="object-contain"
-            />
           </div>
         </div>
       </div>
     </section>
-  );
-}
-
-function Stars() {
-  // Render scattered subtle dots for tech background
-  const dots = Array.from({ length: 60 }, (_, i) => ({
-    top: (i * 137) % 100,
-    left: (i * 71) % 100,
-    s: 1 + (i % 3) * 0.5,
-    o: 0.2 + ((i * 13) % 5) / 10,
-  }));
-  return (
-    <div aria-hidden className="pointer-events-none absolute inset-0">
-      {dots.map((d, i) => (
-        <span
-          key={i}
-          className="absolute rounded-full bg-white"
-          style={{
-            top: `${d.top}%`,
-            left: `${d.left}%`,
-            width: `${d.s}px`,
-            height: `${d.s}px`,
-            opacity: d.o,
-          }}
-        />
-      ))}
-    </div>
   );
 }

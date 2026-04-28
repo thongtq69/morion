@@ -22,11 +22,11 @@ export function Header() {
   return (
     <>
       <header className="pointer-events-none fixed inset-x-0 top-0 z-40 flex justify-center px-3 pt-4">
-        <div className="pointer-events-auto flex w-full max-w-[420px] items-center justify-between gap-3 rounded-full bg-white/85 px-3 py-2 shadow-[0_8px_32px_rgba(13,28,92,0.12)] backdrop-blur-xl ring-1 ring-black/5">
-          <Logo width={120} height={32} />
+        <div className="hn-header-pill pointer-events-auto flex h-[57px] w-full max-w-[420px] items-center justify-between gap-2 px-3">
+          <Logo width={130} height={36} />
           <Link
             href="/lien-he"
-            className="inline-flex h-9 items-center justify-center rounded-full bg-brand px-5 text-[13px] font-bold text-white transition hover:bg-brand-dark"
+            className="hn-btn-primary inline-flex h-9 items-center justify-center rounded-full px-4 text-[14px] font-medium text-white"
           >
             Liên hệ
           </Link>
@@ -34,7 +34,7 @@ export function Header() {
             type="button"
             aria-label="Tìm kiếm"
             onClick={() => setSearchOpen(true)}
-            className="flex h-9 w-9 items-center justify-center rounded-full bg-white text-slate-700 ring-1 ring-slate-200 transition hover:bg-brand-light hover:text-brand"
+            className="flex h-9 w-9 items-center justify-center rounded-full bg-white text-[#1e3a5f] ring-1 ring-[rgba(22,106,217,0.3)] transition hover:bg-brand-light hover:text-brand"
           >
             <Search className="h-4 w-4" />
           </button>
@@ -42,7 +42,7 @@ export function Header() {
             type="button"
             aria-label="Mở menu"
             onClick={() => setMenuOpen(true)}
-            className="flex h-9 w-9 items-center justify-center rounded-full bg-white text-slate-700 ring-1 ring-slate-200 transition hover:bg-brand-light hover:text-brand"
+            className="flex h-9 w-9 items-center justify-center rounded-lg text-slate-700 transition hover:bg-brand-light hover:text-brand"
           >
             <GridIcon />
           </button>

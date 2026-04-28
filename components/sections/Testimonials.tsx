@@ -13,11 +13,11 @@ export function Testimonials() {
   const cur = t.items[active];
   return (
     <section className="bg-white py-20">
-      <div className="mx-auto max-w-[1200px] px-6">
-        <div className="mx-auto max-w-3xl text-center">
-          <span className="text-sm text-brand">+ {t.label}</span>
-          <h2 className="mt-3 text-3xl font-extrabold leading-tight tracking-tight text-brand-dark md:text-4xl lg:text-5xl">
-            <span className="font-script text-brand">{t.headline.split(" ").slice(0, 2).join(" ")}</span>{" "}
+      <div className="mx-auto max-w-[1345px] px-10">
+        <div className="mx-auto max-w-4xl text-center">
+          <span className="text-sm font-medium text-brand">+ {t.label}</span>
+          <h2 className="mt-3 text-[60px] font-extrabold leading-[1.1] tracking-[-0.02em] text-[#0d1321]">
+            <span className="font-script font-medium text-brand">{t.headline.split(" ").slice(0, 2).join(" ")}</span>{" "}
             {t.headline.split(" ").slice(2).join(" ")}
           </h2>
         </div>

@@ -5,13 +5,13 @@ export function IndustriesGrid() {
   const i = home.industries;
   return (
     <section className="bg-white py-20">
-      <div className="mx-auto max-w-[1200px] px-6">
-        <div className="mx-auto mb-10 max-w-3xl text-center">
-          <span className="inline-flex items-center gap-2 text-sm text-brand">
-            <span className="text-lg leading-none">+</span>
+      <div className="mx-auto max-w-[1345px] px-10">
+        <div className="mb-12">
+          <span className="inline-flex items-center gap-1 text-sm font-medium text-[#05080c]">
+            <span className="text-base leading-none text-brand">+</span>
             {i.label}
           </span>
-          <h2 className="mt-3 text-3xl font-extrabold leading-tight tracking-tight text-brand-dark md:text-4xl">
+          <h2 className="mt-3 text-[45px] font-extrabold leading-[1.1] tracking-[-0.02em] text-[#0d1321]">
             {i.headline}
           </h2>
         </div>
@@ -20,7 +20,7 @@ export function IndustriesGrid() {
             <Link
               key={it.href}
               href={it.href}
-              className="group flex items-center justify-center rounded-2xl border border-slate-200 bg-white px-4 py-4 text-center text-[13px] font-semibold text-slate-700 transition hover:-translate-y-0.5 hover:border-brand hover:bg-brand hover:text-white hover:shadow-lg hover:shadow-brand/20"
+              className="group flex h-[50px] items-center justify-center rounded-full border border-slate-200 bg-white px-4 text-center text-[14px] font-medium text-[#0c1e5b] transition hover:-translate-y-0.5 hover:border-brand hover:bg-brand hover:text-white hover:shadow-lg hover:shadow-brand/20"
             >
               {it.title}
             </Link>
