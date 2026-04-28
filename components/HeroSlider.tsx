@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { heroSlides, heroFeaturedLinks } from "@/lib/site";
+import { heroSlides, heroFeaturedLinks, news, services } from "@/lib/site";
 
 const ARTICLE_ICONS = [
   "https://wintek.com.vn/wp-content/uploads/2025/06/dieu-hoa-am-tran-noi-ong-gio-daikin-300x300.jpg",
@@ -14,10 +14,18 @@ const ARTICLE_ICONS = [
   "https://wintek.com.vn/wp-content/uploads/2025/06/may-lanh-inverter-aqua-AQA-RV10ME-300x300.jpg",
 ];
 
+const NEWS_SLUGS = new Set(news.map((n) => n.slug));
+const SERVICE_SLUGS = new Set(services.map((s) => s.slug));
+
 function localizeHref(href: string): string {
   try {
     const url = new URL(href);
-    if (url.hostname === "wintek.com.vn") return url.pathname.replace(/\/$/, "/") || "/";
+    if (url.hostname === "wintek.com.vn") {
+      const slug = url.pathname.replace(/^\/|\/$/g, "");
+      if (NEWS_SLUGS.has(slug)) return `/tin-tuc/${slug}`;
+      if (SERVICE_SLUGS.has(slug)) return "/dich-vu";
+      return "/tin-tuc";
+    }
   } catch {}
   return href;
 }
