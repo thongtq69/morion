@@ -1,4 +1,4 @@
-import data from "./data/site-data.json";
+import core from "./data/core.json";
 
 export type NavItem = { label: string; href: string };
 
@@ -35,28 +35,16 @@ export type SiteInfo = {
   domain: string;
 };
 
-type DataShape = {
+type Core = {
   site: SiteInfo;
   mainNav: NavItem[];
   servicesNav: NavItem[];
-  services: ContentPage[];
-  industries: ContentPage[];
-  caseStudies: ContentPage[];
-  wiki: ContentPage[];
-  about: { title: string; metaDescription?: string; image?: string; contentText?: string; contentHtml: string };
-  contact: { title: string; metaDescription?: string; contentText?: string; contentHtml: string };
   home: any;
 };
 
-const d = data as unknown as DataShape;
+const c = core as unknown as Core;
 
-export const site = d.site;
-export const mainNav = d.mainNav;
-export const servicesNav = d.servicesNav;
-export const services = d.services;
-export const industries = d.industries;
-export const caseStudies = d.caseStudies;
-export const wiki = d.wiki;
-export const aboutPage = d.about;
-export const contactPage = d.contact;
-export const home = d.home;
+export const site = c.site;
+export const mainNav = c.mainNav;
+export const servicesNav = c.servicesNav;
+export const home = c.home;

@@ -4,7 +4,7 @@ import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
 import { CtaBanner } from "@/components/sections/CtaBanner";
-import { industries } from "@/lib/site";
+import { industries } from "@/lib/data/industries";
 
 export const metadata: Metadata = {
   title: "Lĩnh vực hoạt động",

@@ -4,7 +4,7 @@ import Image from "next/image";
 import { ArrowUpRight, Calendar } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
 import { CtaBanner } from "@/components/sections/CtaBanner";
-import { wiki } from "@/lib/site";
+import { wiki } from "@/lib/data/wiki";
 
 export const metadata: Metadata = {
   title: "Wiki",

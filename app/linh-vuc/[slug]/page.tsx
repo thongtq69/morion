@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 import { ArrowUpRight } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
 import { CtaBanner } from "@/components/sections/CtaBanner";
-import { industries } from "@/lib/site";
+import { industries } from "@/lib/data/industries";
 
 type Params = { slug: string };
 

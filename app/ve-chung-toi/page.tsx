@@ -3,7 +3,7 @@ import Image from "next/image";
 import { PageHero } from "@/components/PageHero";
 import { CtaBanner } from "@/components/sections/CtaBanner";
 import { CompanyOverview } from "@/components/sections/CompanyOverview";
-import { aboutPage } from "@/lib/site";
+import { aboutPage } from "@/lib/data/about";
 
 export const metadata: Metadata = {
   title: aboutPage.title,

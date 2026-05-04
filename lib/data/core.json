@@ -1,0 +1,631 @@
+{
+  "site": {
+    "name": "HomeNest",
+    "shortName": "HomeNest Việt Nam",
+    "tagline": "Technology Meets Imagination",
+    "description": "HomeNest Việt Nam chuyên phát triển Website, Mobile App và giải pháp phần mềm AI-driven, đồng hành cùng doanh nghiệp Việt trong hành trình chuyển đổi số và tối ưu vận hành.",
+    "company": "HomeNest Việt Nam",
+    "parent": "QuestX",
+    "hotline": "(+84) 898 - 994 - 298",
+    "hotlineRaw": "84898994298",
+    "phones": [
+      "+84898994298",
+      "0708070888"
+    ],
+    "phonesDisplay": [
+      "(+84) 898 - 994 - 298"
+    ],
+    "email": "info@questx.com.vn",
+    "address": "The Sun Avenue, 28 Mai Chí Thọ, Phường Bình Trưng, Tp. Hồ Chí Minh, Việt Nam.",
+    "social": {
+      "facebook": "https://www.facebook.com/homenestsoftware",
+      "youtube": "https://www.youtube.com/@homenest.official",
+      "tiktok": "https://www.tiktok.com/@homenest.software",
+      "linkedin": "https://www.linkedin.com/company/homenestsoftware/",
+      "whatsapp": "https://wa.me/+84708070888",
+      "zalo": "https://zalo.me/0708070888"
+    },
+    "relatedSites": {
+      "homenest_software": "https://homenest.software",
+      "homenest_tech": "https://homenest.tech",
+      "homenest_media": "https://homenest.media"
+    },
+    "copyright": "Copyright © 2026 HomeNest. A member of QuestX. All rights reserved.",
+    "url": "https://homenest.com.vn/",
+    "title": "HomeNest Việt Nam - Thiết kế Website, Mobile App, AI-driven",
+    "domain": "homenest.com.vn"
+  },
+  "mainNav": [
+    {
+      "label": "Trang chủ",
+      "href": "/"
+    },
+    {
+      "label": "Giới thiệu",
+      "href": "/ve-chung-toi"
+    },
+    {
+      "label": "Case Studies",
+      "href": "/case-studies"
+    },
+    {
+      "label": "Lĩnh vực",
+      "href": "/linh-vuc"
+    },
+    {
+      "label": "Wiki",
+      "href": "/wiki"
+    },
+    {
+      "label": "Liên hệ",
+      "href": "/lien-he"
+    }
+  ],
+  "servicesNav": [
+    {
+      "label": "Phát triển phần mềm",
+      "href": "/dich-vu"
+    },
+    {
+      "label": "Thiết kế website",
+      "href": "/dich-vu/thiet-ke-website"
+    },
+    {
+      "label": "Phát triển AI",
+      "href": "/dich-vu/phat-trien-ai"
+    },
+    {
+      "label": "Phát triển ứng dụng SaaS",
+      "href": "/dich-vu/phat-trien-ung-dung-saas"
+    },
+    {
+      "label": "Thiết kế App",
+      "href": "/dich-vu/thiet-ke-app"
+    },
+    {
+      "label": "Vận hành và bảo trì",
+      "href": "/dich-vu/van-hanh-va-bao-tri"
+    },
+    {
+      "label": "Phát triển phần mềm doanh nghiệp",
+      "href": "/dich-vu/phat-trien-phan-mem-doanh-nghiep"
+    },
+    {
+      "label": "Phát triển phần mềm MVP",
+      "href": "/dich-vu/phat-trien-phan-mem-mvp"
+    },
+    {
+      "label": "Phát triển DevOps",
+      "href": "/dich-vu/phat-trien-devops"
+    },
+    {
+      "label": "Phát triển IoT",
+      "href": "/dich-vu/phat-trien-iot"
+    },
+    {
+      "label": "Phát triển Blockchain",
+      "href": "/dich-vu/phat-trien-blockchain"
+    }
+  ],
+  "home": {
+    "hero": {
+      "title": "HomeNest Việt Nam",
+      "description": "Với kinh nghiệm hơn 10 năm chuyên sâu trong các lĩnh vực phát triển trang web, ứng dụng di động, phần mềm doanh nghiệp và trí tuệ nhân tạo, chúng tôi giúp bạn tối ưu hóa quy trình vận hành. HomeNest Việt Nam xây dựng nền tảng công nghệ vững chắc để doanh nghiệp của bạn sẵn sàng bứt phá trong kỷ nguyên số.",
+      "ctaPrimary": {
+        "label": "Bắt đầu ngay!",
+        "href": "/lien-he"
+      },
+      "ctaSecondary": {
+        "label": "Xem dự án",
+        "href": "/case-studies"
+      },
+      "imageMain": "https://image.homenest.com.vn/wp-content/uploads/2026/04/Khoi-banner-trang-chu-HomeNest-Viet-Nam.png",
+      "imageColumn": "https://image.homenest.com.vn/wp-content/uploads/2026/04/Cot-banner-trang-chu-HomeNest-Viet-Nam.png",
+      "logo": "https://image.homenest.com.vn/wp-content/uploads/2026/04/Logo-HomeNest-Viet-Nam.png"
+    },
+    "about": {
+      "label": "Về HomeNest Việt Nam",
+      "headline": "Đơn vị phát triển website, mobile app và giải pháp phần mềm AI-driven, đồng hành cùng doanh nghiệp Việt trong hành trình chuyển đổi số",
+      "paragraphs": [
+        "HomeNest Việt Nam là đơn vị chuyên cung cấp các giải pháp chuyển đổi số toàn diện. Mục tiêu của chúng tôi là giúp doanh nghiệp tối ưu hiệu suất vận hành và tăng trưởng mạnh mẽ trên thị trường số.",
+        "Chúng tôi luôn đặt bản thân vào vị trí khách hàng, từ đó thấu hiểu nhu cầu và đưa ra các giải pháp hiệu quả, giúp doanh nghiệp giải quyết các bài toán vận hành. Điểm khác biệt của HomeNest Việt Nam là sự kết hợp hoàn hảo giữa năng lực và sự am hiểu về trải nghiệm của người dùng. Với chúng tôi, mỗi sản phẩm không chỉ vận hành trơn tru mà còn đem lại giá trị thực tế cho doanh nghiệp.",
+        "Đừng để doanh nghiệp tụt hậu trong kỷ nguyên số hiện nay. HomeNest Việt Nam cam kết mang đến chất lượng dịch vụ và công nghệ vượt trội, sẵn sàng cùng doanh nghiệp biến thách thức vận hành thành giải pháp hiệu quả."
+      ],
+      "image": "https://image.homenest.com.vn/wp-content/uploads/2026/04/Thi-truong-HomeNest-Viet-Nam-phuc-vu.jpg"
+    },
+    "companyOverview": {
+      "label": "Hành trình kiến tạo",
+      "headline": [
+        "Kiến Tạo",
+        "Tương Lai",
+        "Doanh Nghiệp"
+      ],
+      "founder": {
+        "name": "Nguyễn Tiến",
+        "role": "CO-Founder",
+        "quote": "Thành công của khách hàng chính là thước đo duy nhất cho chất lượng dịch vụ và uy tín của chúng tôi.",
+        "image": "https://image.homenest.com.vn/wp-content/uploads/2026/04/Nguyen-Tien-Co-Founder-at-HomeNest-Viet-Nam.jpg"
+      },
+      "vision": {
+        "title": "Tầm nhìn & Sứ mệnh",
+        "text": "Trở thành đối tác chiến lược hàng đầu, dẫn dắt các doanh nghiệp vượt qua thách thức của kỷ nguyên số. Chúng tôi cam kết mang đến những công nghệ đột phá nhằm tối ưu hóa vận hành, giúp khách hàng bứt phá giới hạn bằng các hệ sinh thái phần mềm toàn diện, hướng tới sự phát triển bền vững và lâu dài.",
+        "ctaLabel": "Tìm hiểu về chúng tôi",
+        "ctaHref": "/ve-chung-toi"
+      },
+      "values": {
+        "title": "Giá trị cốt lõi",
+        "items": [
+          "Dịch vụ chuyên nghiệp",
+          "Sáng tạo không ngừng",
+          "Vận hành linh hoạt",
+          "Thấu hiểu khách hàng",
+          "Tận tâm phục vụ"
+        ]
+      },
+      "stats": [
+        {
+          "label": "Năm kinh nghiệm",
+          "value": "10+",
+          "desc": "Kinh nghiệm thực chiến, kiến tạo giá trị thực."
+        },
+        {
+          "label": "Khách hàng tin tưởng",
+          "value": "250+",
+          "desc": "Đối tác tin cậy của hàng trăm doanh nghiệp.",
+          "highlight": true
+        },
+        {
+          "label": "Quốc gia",
+          "value": "15+",
+          "desc": "Phục vụ mạng lưới đối tác trên toàn cầu."
+        },
+        {
+          "label": "Hài lòng từ khách hàng",
+          "value": "98%",
+          "desc": "Chất lượng dịch vụ vượt trên mọi kỳ vọng."
+        }
+      ]
+    },
+    "servicesSection": {
+      "label": "Dịch vụ",
+      "headline": [
+        "Giải Pháp",
+        "Tăng Trưởng",
+        "Doanh Nghiệp"
+      ],
+      "ctaLabel": "Xem tất cả",
+      "ctaHref": "/dich-vu",
+      "tabs": [
+        {
+          "title": "Phát triển phần mềm",
+          "items": [
+            {
+              "num": "01",
+              "title": "Thiết kế website",
+              "desc": "Thiết kế website tốc độ cao, tối ưu trải nghiệm người dùng giúp tăng tỷ lệ chuyển đổi.",
+              "href": "/dich-vu/thiet-ke-website"
+            },
+            {
+              "num": "02",
+              "title": "Thiết kế App",
+              "desc": "Phát triển ứng dụng iOS và Android theo yêu cầu, giao diện tối ưu, hiệu suất cao.",
+              "href": "/dich-vu/thiet-ke-app"
+            },
+            {
+              "num": "03",
+              "title": "Phát triển AI",
+              "desc": "Tích hợp AI và machine learning vào sản phẩm, tự động hoá quy trình kinh doanh.",
+              "href": "/dich-vu/phat-trien-ai"
+            },
+            {
+              "num": "04",
+              "title": "Phát triển ứng dụng SaaS",
+              "desc": "Xây dựng nền tảng SaaS đa người dùng, sẵn sàng mở rộng, bảo mật cao.",
+              "href": "/dich-vu/phat-trien-ung-dung-saas"
+            },
+            {
+              "num": "05",
+              "title": "Phát triển phần mềm doanh nghiệp",
+              "desc": "Giải pháp ERP, CRM, hệ thống quản trị tuỳ chỉnh cho doanh nghiệp.",
+              "href": "/dich-vu/phat-trien-phan-mem-doanh-nghiep"
+            },
+            {
+              "num": "06",
+              "title": "Phát triển phần mềm MVP",
+              "desc": "Ra mắt sản phẩm MVP nhanh chóng, kiểm chứng ý tưởng kinh doanh tiết kiệm chi phí.",
+              "href": "/dich-vu/phat-trien-phan-mem-mvp"
+            }
+          ]
+        },
+        {
+          "title": "Hạ tầng công nghệ",
+          "items": [
+            {
+              "num": "01",
+              "title": "Phát triển DevOps",
+              "desc": "CI/CD, hạ tầng cloud, tự động hoá triển khai và giám sát hệ thống.",
+              "href": "/dich-vu/phat-trien-devops"
+            },
+            {
+              "num": "02",
+              "title": "Phát triển IoT",
+              "desc": "Lập trình firmware, tính toán tại biên và hệ thống quản lý dữ liệu thông minh.",
+              "href": "/dich-vu/phat-trien-iot"
+            },
+            {
+              "num": "03",
+              "title": "Phát triển Blockchain",
+              "desc": "Xây dựng smart contract, dApp, hệ sinh thái blockchain tuỳ chỉnh.",
+              "href": "/dich-vu/phat-trien-blockchain"
+            },
+            {
+              "num": "04",
+              "title": "Vận hành và bảo trì",
+              "desc": "Vận hành 24/7, bảo trì hệ thống, hỗ trợ kỹ thuật chuyên sâu.",
+              "href": "/dich-vu/van-hanh-va-bao-tri"
+            }
+          ]
+        }
+      ]
+    },
+    "industries": {
+      "label": "Lĩnh vực",
+      "headline": "Lĩnh vực hoạt động",
+      "items": [
+        {
+          "title": "Bán lẻ",
+          "href": "/linh-vuc/ban-le"
+        },
+        {
+          "title": "Bất động sản",
+          "href": "/linh-vuc/bat-dong-san"
+        },
+        {
+          "title": "Chuỗi cung ứng",
+          "href": "/linh-vuc/chuoi-cung-ung"
+        },
+        {
+          "title": "Công nghệ tài chính",
+          "href": "/linh-vuc/cong-nghe-tai-chinh"
+        },
+        {
+          "title": "Dầu khí",
+          "href": "/linh-vuc/dau-khi"
+        },
+        {
+          "title": "Du lịch",
+          "href": "/linh-vuc/du-lich"
+        },
+        {
+          "title": "Giáo dục",
+          "href": "/linh-vuc/giao-duc"
+        },
+        {
+          "title": "Kế toán",
+          "href": "/linh-vuc/ke-toan"
+        },
+        {
+          "title": "Kiến trúc & xây dựng",
+          "href": "/linh-vuc/kien-truc-xay-dung"
+        },
+        {
+          "title": "Ngân hàng",
+          "href": "/linh-vuc/ngan-hang"
+        },
+        {
+          "title": "Nông nghiệp",
+          "href": "/linh-vuc/nong-nghiep"
+        },
+        {
+          "title": "Phần mềm doanh nghiệp",
+          "href": "/linh-vuc/phan-mem-doanh-nghiep"
+        },
+        {
+          "title": "Phần mềm tiện ích",
+          "href": "/linh-vuc/phan-mem-tien-ich"
+        },
+        {
+          "title": "Phát triển ứng dụng theo yêu cầu",
+          "href": "/linh-vuc/phat-trien-ung-dung-theo-yeu-cau"
+        },
+        {
+          "title": "Tài chính doanh nghiệp",
+          "href": "/linh-vuc/tai-chinh-doanh-nghiep"
+        },
+        {
+          "title": "Thương mại điện tử",
+          "href": "/linh-vuc/thuong-mai-dien-tu"
+        },
+        {
+          "title": "Vận tải và Logistics",
+          "href": "/linh-vuc/van-tai-va-logistics"
+        },
+        {
+          "title": "Y tế",
+          "href": "/linh-vuc/y-te"
+        }
+      ]
+    },
+    "ctaBanner": {
+      "label": "Liên hệ ngay!",
+      "headline": "Bắt đầu hành trình chuyển đổi số cùng HomeNest Việt Nam",
+      "description": "Hãy cùng chúng tôi xây dựng các giải pháp Website, Mobile App và AI để tối ưu hoá quy trình vận hành, giúp doanh nghiệp của bạn bứt phá trong kỷ nguyên số.",
+      "ctaLabel": "Nhận tư vấn giải pháp ngay",
+      "ctaHref": "/lien-he"
+    },
+    "caseStudiesSection": {
+      "label": "Dự án",
+      "headline": [
+        "Biến Ý Tưởng Đột Phá",
+        "Thành Sản Phẩm Dẫn Đầu"
+      ],
+      "ctaLabel": "Xem tất cả dự án",
+      "ctaHref": "/case-studies",
+      "items": [
+        {
+          "slug": "case-studies",
+          "title": "Case study - HomeNest Việt Nam",
+          "image": "https://homenest.com.vn/og-image.jpg",
+          "desc": "Khám phá các dự án tiêu biểu và case studies tại HomeNest Việt Nam. Minh chứng năng lực thiết kế website, app và AI giúp doanh nghiệp tối ưu vận hành hiệu quả."
+        },
+        {
+          "slug": "app-vietplus",
+          "title": "VietPlus",
+          "image": "https://image.homenest.com.vn/wp-content/uploads/2026/04/Giao-dien-tin-nhan-cua-Vietplus-case-study.jpg",
+          "desc": "Trao quyền cho cộng đồng người Việt tại Hàn Quốc với VietPlus, ứng dụng di động an toàn từ HomeNest Việt Nam, kết nối di chuyển, nhà ở và việc làm."
+        },
+        {
+          "slug": "bao-bi-tan-phong",
+          "title": "Tấn Phong",
+          "image": "https://image.homenest.com.vn/wp-content/uploads/2026/04/Giao-dien-trang-chu-Tan-Phong-Case-Study.jpg",
+          "desc": "Khám phá các loại màng và nhựa công nghiệp của Tấn Phong, được phát triển bởi HomeNest Việt Nam, trang tối ưu hóa SEO này đảm bảo trải nghiệm B2B chuyên nghiệp."
+        },
+        {
+          "slug": "la-cerise-dalat-villas",
+          "title": "La Cerise Dalat Villas - HomeNest Việt Nam Case study",
+          "image": "https://image.homenest.com.vn/wp-content/uploads/2025/06/giao-dien-du-an-La-Cerise-Dalat-Villas-Case-Study.jpg",
+          "desc": "Trải nghiệm sự sang trọng cùng La Cerise Dalat Villas nền tảng mang phong cách Pháp lãng mạn do HomeNest Việt Nam phát triển với SEO tối ưu và tốc độ tải nhanh."
+        },
+        {
+          "slug": "lovers-lawn-app",
+          "title": "Lover's Lawn - HomeNest Việt Nam case study",
+          "image": "https://image.homenest.com.vn/wp-content/uploads/2026/04/Giao-dien-ho-so-cua-Lovers-Lawn-case-study.jpg",
+          "desc": "Nâng tầm dịch vụ cảnh quan với Lover’s Lawn, ứng dụng đặt dịch vụ chuyên nghiệp từ HomeNest Việt Nam, tích hợp đặt lịch thông minh, theo dõi thời gian thực."
+        },
+        {
+          "slug": "nhua-khanh-phong",
+          "title": "Khánh Phong",
+          "image": "https://image.homenest.com.vn/wp-content/uploads/2026/04/Homepage-interface-of-Khanh-Phong-Plastics-case-study.jpg",
+          "desc": "Công ty TNHH Nhựa Khánh Phong là nhà sản xuất màng nhựa HDPE và bao bì, phục vụ nhiều ngành công nghiệp với trọng tâm là chất lượng và tính bền vững."
+        },
+        {
+          "slug": "peace-viet-nam",
+          "title": "Peace Vietnam - HomeNest Việt  Case study",
+          "image": "https://image.homenest.com.vn/wp-content/uploads/2026/04/giao-dien-thu-vien-anh-Peace-Vietnam-Case-Study.jpg",
+          "desc": "Nâng tầm doanh nghiệp với thiết bị phòng sạch Peace Việt Nam và giải pháp SEO chuyên nghiệp từ HomeNest Việt Nam, tối ưu khả năng tiếp cận thị trường."
+        },
+        {
+          "slug": "website-hang-kenh",
+          "title": "HANG KENH",
+          "image": "https://image.homenest.com.vn/wp-content/uploads/2026/04/Giao-dien-tham-Decor-Hang-Kenh-case-study.jpg",
+          "desc": "Khám phá thảm len thủ công cao cấp HANG KENH qua showroom số tinh tế từ HomeNest Việt Nam, chuẩn SEO, tải nhanh, trải nghiệm mượt mà và sang trọng."
+        }
+      ]
+    },
+    "whyChooseUs": {
+      "label": "Tại sao khách hàng tin tưởng chọn HomeNest Việt Nam",
+      "headline": [
+        "Điểm Tựa",
+        "Vững Chắc",
+        "Trong Kỷ Nguyên Số"
+      ],
+      "subhead": "Giải pháp chiến lược tạo nên giá trị bền vững",
+      "intro": "HomeNest Việt Nam đảm bảo",
+      "items": [
+        {
+          "title": "Chất lượng vượt trội",
+          "desc": "Sản phẩm được kiểm thử kỹ lưỡng, đạt chuẩn quốc tế.",
+          "icon": "https://image.homenest.com.vn/wp-content/uploads/2026/04/why-choose-us-icon-1.svg"
+        },
+        {
+          "title": "Bàn giao đúng tiến độ",
+          "desc": "Cam kết tiến độ rõ ràng, minh bạch trong từng giai đoạn.",
+          "icon": "https://image.homenest.com.vn/wp-content/uploads/2026/04/why-choose-us-icon-2.png"
+        },
+        {
+          "title": "Đội ngũ chuyên gia",
+          "desc": "Hơn 10 năm kinh nghiệm với hàng trăm dự án thực chiến.",
+          "icon": "https://image.homenest.com.vn/wp-content/uploads/2026/04/why-choose-us-icon-3.png"
+        },
+        {
+          "title": "Hỗ trợ 24/7",
+          "desc": "Đồng hành cùng doanh nghiệp ngay cả sau khi bàn giao.",
+          "icon": "https://image.homenest.com.vn/wp-content/uploads/2026/04/why-choose-us-icon-4.png"
+        },
+        {
+          "title": "Bảo mật chuẩn quốc tế",
+          "desc": "Áp dụng các tiêu chuẩn bảo mật và mã hoá hàng đầu.",
+          "icon": "https://image.homenest.com.vn/wp-content/uploads/2026/04/why-choose-us-icon-5.png"
+        }
+      ]
+    },
+    "testimonials": {
+      "label": "Nhận xét của khách hàng",
+      "headline": "Trải Nghiệm Từ Khách Hàng",
+      "items": [
+        {
+          "quote": "Ban đầu anh không kỳ vọng quá nhiều nhưng HomeNest Việt Nam đã làm anh bất ngờ. Website mới trông chuyên nghiệp hơn rất nhiều và đội ngũ làm việc cùng rất tận tâm, hỗ trợ liên tục.",
+          "author": "Anh Hùng",
+          "role": "CEO – Tan Phong"
+        },
+        {
+          "quote": "HomeNest đã giúp chúng tôi xây dựng một ứng dụng di động hiệu quả, tối ưu trải nghiệm và đáp ứng đúng yêu cầu kinh doanh.",
+          "author": "Chị Linh",
+          "role": "Founder – VietPlus"
+        },
+        {
+          "quote": "Tốc độ triển khai và chất lượng bàn giao rất ấn tượng. Đối tác đồng hành đáng tin cậy.",
+          "author": "Anh Khoa",
+          "role": "CTO – Hang Kenh"
+        }
+      ]
+    },
+    "techStack": {
+      "label": "Nền tảng công nghệ",
+      "headline": [
+        "Ứng Dụng",
+        "Công Nghệ",
+        "tại HomeNest Việt Nam"
+      ],
+      "tabs": [
+        "Tất cả",
+        "Giao diện",
+        "Hệ thống",
+        "Cơ sở dữ liệu",
+        "Vận hành",
+        "Quản lý"
+      ],
+      "items": [
+        {
+          "name": "React / Next.js",
+          "icon": "https://image.homenest.com.vn/wp-content/uploads/2026/04/react-icon.svg",
+          "tab": "Giao diện"
+        },
+        {
+          "name": "Angular",
+          "icon": "https://image.homenest.com.vn/wp-content/uploads/2026/04/figma-icon.svg",
+          "tab": "Giao diện"
+        },
+        {
+          "name": "Vue.js",
+          "icon": "https://image.homenest.com.vn/wp-content/uploads/2026/04/figma-icon.svg",
+          "tab": "Giao diện"
+        },
+        {
+          "name": "Figma",
+          "icon": "https://image.homenest.com.vn/wp-content/uploads/2026/04/figma-icon.svg",
+          "tab": "Giao diện"
+        },
+        {
+          "name": "Adobe XD",
+          "icon": "https://image.homenest.com.vn/wp-content/uploads/2026/04/xd-icon.svg",
+          "tab": "Giao diện"
+        },
+        {
+          "name": "Sketch",
+          "icon": "https://image.homenest.com.vn/wp-content/uploads/2026/04/figma-icon.svg",
+          "tab": "Giao diện"
+        },
+        {
+          "name": "Node.js",
+          "icon": "https://image.homenest.com.vn/wp-content/uploads/2026/04/github-icon.svg",
+          "tab": "Hệ thống"
+        },
+        {
+          "name": "Laravel",
+          "icon": "https://image.homenest.com.vn/wp-content/uploads/2026/04/github-icon.svg",
+          "tab": "Hệ thống"
+        },
+        {
+          "name": "WordPress / PHP",
+          "icon": "https://image.homenest.com.vn/wp-content/uploads/2026/04/github-icon.svg",
+          "tab": "Hệ thống"
+        },
+        {
+          "name": ".NET / ASP.NET",
+          "icon": "https://image.homenest.com.vn/wp-content/uploads/2026/04/github-icon.svg",
+          "tab": "Hệ thống"
+        },
+        {
+          "name": "Slack",
+          "icon": "https://image.homenest.com.vn/wp-content/uploads/2026/04/slack-icon.svg",
+          "tab": "Quản lý"
+        },
+        {
+          "name": "Notion",
+          "icon": "https://image.homenest.com.vn/wp-content/uploads/2026/04/notion-icon.svg",
+          "tab": "Quản lý"
+        },
+        {
+          "name": "Zapier",
+          "icon": "https://image.homenest.com.vn/wp-content/uploads/2026/04/zapier-icon.svg",
+          "tab": "Vận hành"
+        },
+        {
+          "name": "GitHub",
+          "icon": "https://image.homenest.com.vn/wp-content/uploads/2026/04/github-icon.svg",
+          "tab": "Vận hành"
+        }
+      ]
+    },
+    "faq": {
+      "label": "Các câu hỏi thường gặp",
+      "headline": "Giải Đáp Mọi Thắc Mắc",
+      "items": [
+        {
+          "q": "HomeNest Việt Nam cung cấp những dịch vụ cốt lõi nào?",
+          "a": "Chúng tôi chuyên cung cấp các giải pháp chuyển đổi số từ thiết kế website, app, phần mềm chuyên biệt cho đến phát triển AI/ML, IoT, Blockchain và DevOps."
+        },
+        {
+          "q": "Quy trình làm việc của HomeNest diễn ra như thế nào?",
+          "a": "Chúng tôi triển khai theo quy trình Agile: Thu thập yêu cầu → Phân tích & thiết kế → Phát triển từng sprint → Kiểm thử & QA → Bàn giao & vận hành."
+        },
+        {
+          "q": "HomeNest có hỗ trợ bảo trì sau bàn giao?",
+          "a": "Có. Chúng tôi cung cấp các gói vận hành 24/7 và bảo trì định kỳ, đảm bảo hệ thống luôn ổn định và an toàn."
+        },
+        {
+          "q": "Chi phí dự án được tính như thế nào?",
+          "a": "Chi phí được báo cụ thể sau khi phân tích yêu cầu, có hợp đồng minh bạch và các mốc thanh toán rõ ràng theo tiến độ."
+        },
+        {
+          "q": "Tôi sở hữu mã nguồn sau khi bàn giao?",
+          "a": "Đúng vậy. Bạn sở hữu toàn bộ mã nguồn và tài liệu kỹ thuật ngay khi nghiệm thu hoàn tất."
+        }
+      ]
+    },
+    "wikiSection": {
+      "label": "Wiki",
+      "ctaLabel": "Xem tất cả",
+      "ctaHref": "/wiki",
+      "items": [
+        {
+          "slug": "wiki",
+          "title": "Wiki Việt Nam",
+          "image": "https://s3.ap-southeast-1.amazonaws.com/image.homenest.com.vn/wp-content/uploads/2025/07/22124535/1.webp",
+          "category": "TOP LIST"
+        },
+        {
+          "slug": "blockchain-va-iot-toan-bo-kien-thuc-quan-trong-danh-cho-tech-leaders",
+          "title": "Blockchain và IoT: Toàn bộ kiến thức quan trọng dành cho Tech Leaders",
+          "image": "https://image.homenest.com.vn/wp-content/uploads/2026/03/22115716/blockchain-iot1.jpg",
+          "category": "TOP LIST"
+        },
+        {
+          "slug": "work-life",
+          "title": "Work life | Wiki | Homenest",
+          "image": "https://image.homenest.com.vn/wp-content/uploads/2026/03/22115909/Lo-trinh-nghe-nghiep-Software-Engineer.jpg",
+          "category": "TOP LIST"
+        },
+        {
+          "slug": "flutter-so-voi-react-native-va-xamarin",
+          "title": "Flutter so với React Native và Xamarin: Nên chọn framework nào cho phát triển Mobile?",
+          "image": "https://image.homenest.com.vn/wp-content/uploads/2026/03/22115935/Flutter-so-voi-React-Native-va-Xamarin-Nen-chon-framework-nao-cho-phat-trien-Mobile.webp",
+          "category": "TOP LIST"
+        },
+        {
+          "slug": "lo-trinh-nghe-nghiep-software-engineer-cach-chon-huong-di-phu-hop-voi-ban",
+          "title": "Lộ trình nghề nghiệp Software Engineer: Cách chọn hướng đi phù hợp với bạn",
+          "image": "https://image.homenest.com.vn/wp-content/uploads/2026/03/22115909/Lo-trinh-nghe-nghiep-Software-Engineer.jpg",
+          "category": "TOP LIST"
+        },
+        {
+          "slug": "mot-ngay-lam-viec-cua-mot-backend-engineer-tai-homenest",
+          "title": "Một ngày làm việc của một Backend Engineer tại HomeNest",
+          "image": "https://image.homenest.com.vn/wp-content/uploads/2026/03/22115915/Ngay-lam-viec-cua-mot-Backend.jpg",
+          "category": "TOP LIST"
+        }
+      ]
+    }
+  }
+}

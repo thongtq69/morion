@@ -4,7 +4,7 @@ import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
 import { CtaBanner } from "@/components/sections/CtaBanner";
-import { caseStudies } from "@/lib/site";
+import { caseStudies } from "@/lib/data/case-studies";
 
 export const metadata: Metadata = {
   title: "Case Studies",
